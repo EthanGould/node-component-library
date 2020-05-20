@@ -3,7 +3,6 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src='/javascripts/main.js' defer></script>
   </head>
   <body>
   	<div class="content">
@@ -17,10 +16,16 @@
 	                <li><a href="/patterns/forms" class="sidebar__link js-component-link">Form Elements</a></li>
 	                <li><a href="/patterns/lists" class="sidebar__link js-component-link">Lists</a></li>
 	            </ul>
+	            <select class="js-brand-select" data-selection="{{brand}}">
+	            	<option value="as">Performance</option>
+	            	<option value="ot">Onitsuka Tiger</option>
+	            	<option value="hag">Haglofs</option>
+	            </select>
 	        </nav>
 	    </aside>
 
 	    {{{body}}}
 	</div>
+    <script src='/javascripts/main.js'></script>
   </body>
 </html>

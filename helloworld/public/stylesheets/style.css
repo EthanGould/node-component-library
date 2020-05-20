@@ -1,3 +1,10 @@
+/**
+ * This file is used to show and hude certian components
+ * options that are not common scross all brands.
+ */
+[data-brand="ot"] .button--tertiary-alt {
+  display: none; }
+
 .sidebar {
   padding: 40px 0;
   flex-basis: 300px;
@@ -89,9 +96,10 @@
 .button {
   padding: 10px 30px;
   min-width: 100px;
-  color: #001e63;
-  background-color: #02c3e6;
-  border-color: #02c3e6;
+  color: var(--btn-color);
+  border: 1px solid;
+  background-color: var(--btn-bg);
+  border-color: var(--btn-border-color);
   text-align: center;
   transition: background 0.2s, border 0.2s, opacity 0.2s;
   font-size: 1rem;
@@ -104,32 +112,42 @@
     width: 50px;
     padding: 0;
     line-height: 3rem;
-    font-weight: 900; }
+    font-weight: 900;
+    border-color: var(--btn-border-color); }
   .button:hover:not([disabled]), .button:focus:not([disabled]) {
-    color: #001e63;
-    background-color: #37dffd;
-    border-color: #37dffd; }
+    color: var(--btn-hover-color);
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-border-color); }
   .button[disabled] {
     opacity: 0.7;
     cursor: not-allowed; }
   .button--secondary {
-    color: #001e63;
-    background-color: #e3e5e5;
-    border-color: #e3e5e5;
+    color: var(--btn2-color);
+    background-color: var(--btn2-bg);
+    border-color: var(--btn2-border-color);
     transition: background 0.2s, opacity 0.2s; }
     .button--secondary:hover:not([disabled]), .button--secondary:focus:not([disabled]) {
-      color: #001e63;
-      background-color: #f0f1f1;
-      border-color: #f0f1f1; }
+      color: var(--btn2-hover-color);
+      background-color: var(--btn2-hover-bg);
+      border-color: var(--btn2-hover-border-color); }
   .button--tertiary {
-    color: #001e63;
-    background-color: #d1de01;
-    border-color: #d1de01;
+    color: var(--btn3-color);
+    background-color: var(--btn3-bg);
+    border-color: var(--btn3-border-color);
     transition: background 0.2s, opacity 0.2s; }
     .button--tertiary:hover:not([disabled]), .button--tertiary:focus:not([disabled]) {
-      color: #001e63;
-      background-color: #e9f701;
-      border-color: #e9f701; }
+      color: var(--btn3-hover-color);
+      background-color: var(--btn3-hover-bg);
+      border-color: var(--btn3-hover-border-color); }
+  .button--tertiary-alt {
+    color: var(--btn3-alt-color);
+    background-color: var(--btn3-alt-bg);
+    border-color: var(--btn3-alt-border-color);
+    transition: background 0.2s, opacity 0.2s; }
+    .button--tertiary-alt:hover:not([disabled]), .button--tertiary-alt:focus:not([disabled]) {
+      color: var(--btn3-alt-hover-color);
+      background-color: var(--btn3-alt-hover-bg);
+      border-color: var(--btn3-alt-hover-border-color); }
 
 body {
   margin: 0;
@@ -148,5 +166,54 @@ ul {
 a {
   font-family: sans-serif;
   text-decoration: none; }
+
+select {
+  margin: 0 35px;
+  font-size: 18px; }
+
+html:root {
+  --btn-color: #001e63;
+  --btn-bg: #02c3e6;
+  --btn-border-color: #02c3e6;
+  --btn-hover-color: #001e63;
+  --btn-hover-bg: #34cfeb;
+  --btn-hover-border-color: #34cfeb;
+  --btn2-color: #001e63;
+  --btn2-bg: #e3e5e5;
+  --btn2-border-color: #e3e5e5;
+  --btn2-hover-color: #001e63;
+  --btn2-hover-bg: #efefef;
+  --btn2-hover-border-color: #efefef;
+  --btn3-color: #001e63;
+  --btn3-bg: #d1de01;
+  --btn3-border-color: #d1de01;
+  --btn3-hover-color: #001e63;
+  --btn3-hover-bg: #e8ee80;
+  --btn3-hover-border-color: #e8ee80;
+  --btn3-alt-color: #fff;
+  --btn3-alt-bg: #f8485e;
+  --btn3-alt-border-color: #f8485e;
+  --btn3-alt-hover-color: #fff;
+  --btn3-alt-hover-bg: #fa6374;
+  --btn3-alt-hover-border-color: #fa6374; }
+  html:root [data-brand="ot"] {
+    --btn-color: #fff;
+    --btn-bg: #7f0019;
+    --btn-border-color: #7f0019;
+    --btn-hover-color: #fff;
+    --btn-hover-bg: #993347;
+    --btn-hover-border-color: #993347;
+    --btn2-color: #fff;
+    --btn2-bg: #000;
+    --btn2-border-color: #000;
+    --btn2-hover-color: #fff;
+    --btn2-hover-bg: #666;
+    --btn2-hover-border-color: #666;
+    --btn3-color: #000;
+    --btn3-bg: #fff;
+    --btn3-border-color: #000;
+    --btn3-hover-color: #666;
+    --btn3-hover-bg: #fff;
+    --btn3-hover-border-color: #666; }
 
 /*# sourceMappingURL=style.css.map */

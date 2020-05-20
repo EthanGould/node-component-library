@@ -1,8 +1,9 @@
 @import 'variables'
 @import 'reset'
-@import 'sidebar'
-@import 'component'
-@import 'buttons'
+@import 'brand-display'
+@import 'patterns/sidebar'
+@import 'patterns/component'
+@import 'patterns/buttons'
 
 body
 	margin: 0
@@ -21,3 +22,58 @@ ul
 a
     font-family: sans-serif
     text-decoration: none
+
+select
+    margin: 0 35px
+    font-size: 18px
+
+html:root
+    --btn-color: #001e63
+    --btn-bg: #02c3e6
+    --btn-border-color: #02c3e6
+    --btn-hover-color: #001e63
+    --btn-hover-bg: #34cfeb
+    --btn-hover-border-color: #34cfeb
+
+    --btn2-color: #001e63
+    --btn2-bg: #e3e5e5
+    --btn2-border-color: #e3e5e5
+    --btn2-hover-color: #001e63
+    --btn2-hover-bg: #efefef
+    --btn2-hover-border-color: #efefef
+
+    --btn3-color: #001e63
+    --btn3-bg: #d1de01
+    --btn3-border-color: #d1de01
+    --btn3-hover-color: #001e63
+    --btn3-hover-bg: #e8ee80
+    --btn3-hover-border-color: #e8ee80
+
+    --btn3-alt-color: #fff
+    --btn3-alt-bg: #f8485e
+    --btn3-alt-border-color: #f8485e
+    --btn3-alt-hover-color: #fff
+    --btn3-alt-hover-bg: #fa6374
+    --btn3-alt-hover-border-color: #fa6374
+
+    [data-brand="ot"]
+        --btn-color: #fff
+        --btn-bg: #7f0019
+        --btn-border-color: #7f0019
+        --btn-hover-color: #fff
+        --btn-hover-bg: #993347
+        --btn-hover-border-color: #993347
+
+        --btn2-color: #fff
+        --btn2-bg: #000
+        --btn2-border-color: #000
+        --btn2-hover-color: #fff
+        --btn2-hover-bg: #666
+        --btn2-hover-border-color: #666
+
+        --btn3-color: #000
+        --btn3-bg: #fff
+        --btn3-border-color: #000
+        --btn3-hover-color: #666
+        --btn3-hover-bg: #fff
+        --btn3-hover-border-color: #666
