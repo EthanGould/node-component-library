@@ -3,8 +3,24 @@
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src='/javascripts/main.js' defer></script>
   </head>
   <body>
-    {{{body}}}
+  	<div class="content">
+		<aside class="sidebar">
+	        <nav>
+	            <h1 class="sidebar__header"><a href="/" class="sidebar__link sidebar__link--header">Components</a></h1>
+	            <ul class="sidebar__list">
+	                <li><a href="/patterns/colors" class="sidebar__link js-component-link">Colors</a></li>
+	                <li><a href="/patterns/buttons" class="sidebar__link js-component-link">Buttons</a></li>
+	                <li><a href="/patterns/navigation" class="sidebar__link js-component-link">Navigation</a></li>
+	                <li><a href="/patterns/forms" class="sidebar__link js-component-link">Form Elements</a></li>
+	                <li><a href="/patterns/lists" class="sidebar__link js-component-link">Lists</a></li>
+	            </ul>
+	        </nav>
+	    </aside>
+
+	    {{{body}}}
+	</div>
   </body>
 </html>

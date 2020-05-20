@@ -1,0 +1,36 @@
+.sidebar
+    padding: 40px 0
+    flex-basis: 300px
+    background: $brand-color-dark
+    color: $white
+    font-family: sans-serif
+
+    &__header
+        font-size: 20px
+        margin: 10px 25px
+        padding: 0 0 10px
+        border-bottom: 1px solid $white
+    
+
+    &__link
+        margin: 0 25px
+        padding: 10px
+        box-sizing: border-box
+        font-size: 16px
+        transition: background .2s
+        color: $white
+        display: block
+        
+        &:hover
+            &:not(&--active),
+            &:not(&--header)
+                background: lighten($brand-color-dark, 10)
+        
+
+        &--active
+            background: $brand-color-highlight
+
+        &--header
+            margin: 0;
+            padding: 0;
+            font-size: initial
