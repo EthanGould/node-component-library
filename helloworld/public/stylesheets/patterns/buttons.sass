@@ -1,12 +1,12 @@
 .button
     padding: 10px 30px
     min-width: 100px
-    color: var(--btn-color)
+    color: $btn-color
+    background-color: $btn-bg
     border: 1px solid
-    background-color: var(--btn-bg)
-    border-color: var(--btn-border-color)
+    border-color: $btn-border-color
     text-align: center
-    transition: background 0.2s, border 0.2s, opacity 0.2s
+    transition: background 0.2s, border 0.2s, opacity 0.2s, color 0.2s
     font-size: 1rem
     cursor: pointer
     font-weight: 500
@@ -19,50 +19,201 @@
         padding: 0
         line-height: 3rem
         font-weight: 900
-        border-color: var(--btn-border-color)
+        border: 1px solid
+        border-color: $btn-border-color
 
     &:hover:not([disabled]),
     &:focus:not([disabled])
-        color: var(--btn-hover-color)
-        background-color: var(--btn-hover-bg)
-        border-color: var(--btn-hover-border-color)
+        color: $btn-hover-color
+        background-color: $btn-hover-bg
+        border-color: $btn-hover-border-color
 
     &[disabled]
         opacity: 0.7
         cursor: not-allowed
 
     &--secondary
-        color: var(--btn2-color)
-        background-color: var(--btn2-bg)
-        border-color: var(--btn2-border-color)
+        color: $btn2-color
+        background-color: $btn2-bg
+        border-color: $btn2-border-color
         transition: background 0.2s, opacity 0.2s
 
         &:hover:not([disabled]),
         &:focus:not([disabled])
-            color: var(--btn2-hover-color)
-            background-color: var(--btn2-hover-bg)
-            border-color: var(--btn2-hover-border-color)
+            color: $btn2-hover-color
+            background-color: $btn2-hover-bg
+            border-color: $btn2-hover-border-color
 
     &--tertiary
-        color: var(--btn3-color)
-        background-color: var(--btn3-bg)
-        border-color: var(--btn3-border-color)
+        color: $btn3-color
+        background-color: $btn3-bg
+        border-color: $btn3-border-color
         transition: background 0.2s, opacity 0.2s
 
         &:hover:not([disabled]),
         &:focus:not([disabled])
-            color: var(--btn3-hover-color)
-            background-color: var(--btn3-hover-bg)
-            border-color: var(--btn3-hover-border-color)
+            color: $btn3-hover-color
+            background-color: $btn3-hover-bg
+            border-color: $btn3-hover-border-color
 
     &--tertiary-alt
-        color: var(--btn3-alt-color)
-        background-color: var(--btn3-alt-bg)
-        border-color: var(--btn3-alt-border-color)
+        color: $btn3-alt-color
+        background-color: $btn3-alt-bg
+        border-color: $btn3-alt-border-color
         transition: background 0.2s, opacity 0.2s
 
         &:hover:not([disabled]),
         &:focus:not([disabled])
-            color: var(--btn3-alt-hover-color)
-            background-color: var(--btn3-alt-hover-bg)
-            border-color: var(--btn3-alt-hover-border-color)
+            color: $btn3-alt-hover-color
+            background-color: $btn3-alt-hover-bg
+            border-color: $btn3-alt-hover-border-color
+
+
+// Same button code, with brand specific variables swapped in for OT.
+// This is not needed in practice since we do not mix brand styles on a single page on the storefront.
+// This is just to allow previewing of other brands within a given component.
+[data-brand="ot"]
+    .button
+        padding: 10px 30px
+        min-width: 100px
+        color: $btn-color--ot
+        background-color: $btn-bg--ot
+        border: 1px solid
+        border-color: $btn-border-color--ot
+        text-align: center
+        transition: background 0.2s, border 0.2s, opacity 0.2s, color 0.2s
+        font-size: 1rem
+        cursor: pointer
+        font-weight: 500
+
+        &--square
+            display: inline-block
+            min-width: 0
+            height: 50px
+            width: 50px
+            padding: 0
+            line-height: 3rem
+            font-weight: 900
+            border: 1px solid
+            border-color: $btn-border-color--ot
+
+        &:hover:not([disabled]),
+        &:focus:not([disabled])
+            color: $btn-hover-color--ot
+            background-color: $btn-hover-bg--ot
+            border-color: $btn-hover-border-color--ot
+
+        &[disabled]
+            opacity: 0.7
+            cursor: not-allowed
+
+        &--secondary
+            color: $btn2-color--ot
+            background-color: $btn2-bg--ot
+            border-color: $btn2-border-color--ot
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn2-hover-color--ot
+                background-color: $btn2-hover-bg--ot
+                border-color: $btn2-hover-border-color--ot
+
+        &--tertiary
+            color: $btn3-color--ot
+            background-color: $btn3-bg--ot
+            border-color: $btn3-border-color--ot
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn3-hover-color--ot
+                background-color: $btn3-hover-bg--ot
+                border-color: $btn3-hover-border-color--ot
+
+        &--tertiary-alt
+            color: $btn3-alt-color--ot
+            background-color: $btn3-alt-bg--ot
+            border-color: $btn3-alt-border-color--ot
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn3-alt-hover-color--ot
+                background-color: $btn3-alt-hover-bg--ot
+                border-color: $btn3-alt-hover-border-color--ot
+
+
+// Same button code, with brand specific variables swapped in for Haglofs.
+// This is not needed in practice since we do not mix brand styles on a single page on the storefront.
+// This is just to allow previewing of other brands within a given component.
+[data-brand="hag"]
+    .button
+        padding: 10px 30px
+        min-width: 100px
+        color: $btn-color--hag
+        background-color: $btn-bg--hag
+        border: 1px solid
+        border-color: $btn-border-color--hag
+        text-align: center
+        transition: background 0.2s, border 0.2s, opacity 0.2s, color 0.2s
+        font-size: 1rem
+        cursor: pointer
+        font-weight: 500
+
+        &--square
+            display: inline-block
+            min-width: 0
+            height: 50px
+            width: 50px
+            padding: 0
+            line-height: 3rem
+            font-weight: 900
+            border-color: $btn-border-color--hag
+
+        &:hover:not([disabled]),
+        &:focus:not([disabled])
+            color: $btn-hover-color--hag
+            background-color: $btn-hover-bg--hag
+            border-color: $btn-hover-border-color--hag
+
+        &[disabled]
+            opacity: 0.7
+            cursor: not-allowed
+
+        &--secondary
+            color: $btn2-color--hag
+            background-color: $btn2-bg--hag
+            border-color: $btn2-border-color--hag
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn2-hover-color--hag
+                background-color: $btn2-hover-bg--hag
+                border-color: $btn2-hover-border-color--hag
+
+        &--tertiary
+            color: $btn3-color--hag
+            background-color: $btn3-bg--hag
+            border-color: $btn3-border-color--hag
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn3-hover-color--hag
+                background-color: $btn3-hover-bg--hag
+                border-color: $btn3-hover-border-color--hag
+
+        &--tertiary-alt
+            color: $btn3-alt-color--hag
+            background-color: $btn3-alt-bg--hag
+            border-color: $btn3-alt-border-color--hag
+            transition: background 0.2s, opacity 0.2s
+
+            &:hover:not([disabled]),
+            &:focus:not([disabled])
+                color: $btn3-alt-hover-color--hag
+                background-color: $btn3-alt-hover-bg--hag
+                border-color: $btn3-alt-hover-border-color--hag
+
