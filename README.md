@@ -1,7 +1,9 @@
 # ASICS component library
 A multi-brand component library to display design patterns and source code for the ASICS ecomm sites.
 
-The goal is to promote consistency and reusability as well as provide an at-a-glance visuals for site components across all brands.
+The goal is to promote consistency and reusability as well as provide an at-a-glance visuals for site components across all brands. The eventual goal of this is to be fully in-sync with the productiont site code living in the `asics-sfcc` repository. 
+
+For now my vision is to continue adding more live component examples in this repository and eventually replace what is in the `asics-sfcc` repo, one component at a time. By the end, we will have an updated component library to look back on, as well as freshly written code that is up to standard for the live SFCC storefront sites.
 
 Currently a work in progress...more components to come.
 
