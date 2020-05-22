@@ -268,7 +268,9 @@
 
 .color-card {
   height: 150px;
-  position: relative; }
+  position: relative;
+  margin-top: 50px;
+  box-shadow: 0 0 5px grey; }
   .color-card--primary {
     background: #001e63; }
     .color-card--primary .color-card__text {
@@ -296,13 +298,16 @@
     .color-card--tertiary-alt .color-card__text:nth-child(2) {
       color: #001e63; }
   .color-card__hex {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    text-shadow: 0 0 2px black; }
+    top: -15px;
+    left: -10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px grey;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer; }
   .color-card__text {
     position: absolute;
     bottom: 15px;
@@ -345,13 +350,16 @@
   [data-brand="ot"] .color-card--tertiary-alt {
     background: #000; }
   [data-brand="ot"] .color-card__hex {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    text-shadow: 0 0 2px black; }
+    top: -15px;
+    left: -10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px grey;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer; }
   [data-brand="ot"] .color-card__text {
     position: absolute;
     bottom: 15px;
@@ -389,17 +397,21 @@
   [data-brand="hag"] .color-card--tertiary {
     background: #e3e5e5; }
     [data-brand="hag"] .color-card--tertiary .color-card__text {
+      display: block;
       color: #041e41; }
     [data-brand="hag"] .color-card--tertiary .color-card__text:nth-child(2) {
       color: #ff4338; }
   [data-brand="hag"] .color-card__hex {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    text-shadow: 0 0 2px black; }
+    top: -15px;
+    left: -10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px grey;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer; }
   [data-brand="hag"] .color-card__text {
     position: absolute;
     bottom: 15px;

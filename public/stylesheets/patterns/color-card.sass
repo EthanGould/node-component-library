@@ -1,7 +1,9 @@
 .color-card
     height: 150px
     position: relative
-    
+    margin-top: 50px
+    box-shadow: 0 0 5px grey
+
     // create color contrast text samples within color cards
     &--primary
         background: $brand-color--primary
@@ -43,13 +45,16 @@
 
 
     &__hex
-        color: #fff
-        text-transform: uppercase
-        font-size: 16px
         position: absolute
-        top: 20px
-        left: 20px
-        text-shadow: 0 0 2px black
+        top: -15px
+        left: -10px
+        padding: 5px 10px
+        box-shadow: 0 0 5px grey
+        background: #fff
+        color: #000
+        font-size: 18px
+        text-transform: uppercase
+        cursor: pointer
 
     &__text
         position: absolute
@@ -112,13 +117,16 @@
             background: $brand-color--tertiary-alt--ot
 
         &__hex
-            color: #fff
-            text-transform: uppercase
-            font-size: 16px
             position: absolute
-            top: 20px
-            left: 20px
-            text-shadow: 0 0 2px black
+            top: -15px
+            left: -10px
+            padding: 5px 10px
+            box-shadow: 0 0 5px grey
+            background: #fff
+            color: #000
+            font-size: 18px
+            text-transform: uppercase
+            cursor: pointer
 
         &__text
             position: absolute
@@ -175,19 +183,23 @@
             background: $brand-color--tertiary--hag
 
             .color-card__text
+                display: block
                 color: $brand-color--primary--hag
 
             .color-card__text:nth-child(2)
                 color: $brand-color--secondary--hag
 
         &__hex
-            color: #fff
-            text-transform: uppercase
-            font-size: 16px
             position: absolute
-            top: 20px
-            left: 20px
-            text-shadow: 0 0 2px black
+            top: -15px
+            left: -10px
+            padding: 5px 10px
+            box-shadow: 0 0 5px grey
+            background: #fff
+            color: #000
+            font-size: 18px
+            text-transform: uppercase
+            cursor: pointer
 
         &__text
             position: absolute
