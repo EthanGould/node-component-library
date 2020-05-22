@@ -1,11 +1,11 @@
 {
-  "name": "helloworld",
+  "name": "ASICS-component-library",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=helloworld:* npm run devstart"
+    "serverstart": "DEBUG=ASICS-component-library:* npm run devstart"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

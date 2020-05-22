@@ -1,0 +1,213 @@
+.color-card
+    height: 150px
+    position: relative
+    
+    // create color contrast text samples within color cards
+    &--primary
+        background: $brand-color--primary
+
+        .color-card__text
+            color: $brand-color--secondary
+
+        .color-card__text:nth-child(2)
+            color: #fff
+    
+    &--secondary
+        background: $brand-color--secondary
+
+        .color-card__text
+            display: none
+
+        .color-card__text:nth-child(2)
+            display: block
+            color: $brand-color--primary
+
+    &--tertiary
+        background: $brand-color--tertiary
+
+        .color-card__text
+            display: none
+
+        .color-card__text:nth-child(2)
+            display: block
+            color: $brand-color--primary
+
+    &--tertiary-alt
+        background: $brand-color--tertiary-alt
+
+        .color-card__text
+            color: #fff
+
+        .color-card__text:nth-child(2)
+            color: $brand-color--primary
+
+
+    &__hex
+        color: #fff
+        text-transform: uppercase
+        font-size: 16px
+        position: absolute
+        top: 20px
+        left: 20px
+        text-shadow: 0 0 2px black
+
+    &__text
+        position: absolute
+        bottom: 15px
+        right: 20px
+        color: #fff
+        font-size: 20px
+
+        &:nth-child(3)
+            bottom: 50px
+
+    &__code
+        display: inline-block
+        border: 1px solid $brand-color-dark
+        border-left: 10px solid $brand-color-dark
+        margin: 20px 0 50px
+        padding: 15px
+
+
+// Same button code, with brand specific variables swapped in for OT.
+// This is not needed in practice since we do not mix brand styles on a single page on the storefront.
+// This is just to allow previewing of other brands within a given component.
+[data-brand="ot"]
+    .color-card
+
+        height: 150px
+        position: relative
+
+        &--primary
+            background: $brand-color--primary--ot
+
+            .color-card__text
+                display: none
+            
+            .color-card__text:nth-child(2)
+                color: #fff
+                display: block
+        
+        &--secondary
+            background: $brand-color--secondary--ot
+
+            .color-card__text
+                display: none
+            
+            .color-card__text:nth-child(2)
+                color: #fff
+                display: block
+
+        &--tertiary
+            background: $brand-color--tertiary--ot
+
+            .color-card__text
+                display: block
+                color: $brand-color--secondary--ot
+            
+            .color-card__text:nth-child(2)
+                color: $brand-color--primary--ot
+
+        &--tertiary-alt
+            background: $brand-color--tertiary-alt--ot
+
+        &__hex
+            color: #fff
+            text-transform: uppercase
+            font-size: 16px
+            position: absolute
+            top: 20px
+            left: 20px
+            text-shadow: 0 0 2px black
+
+        &__text
+            position: absolute
+            bottom: 15px
+            right: 20px
+            color: #fff
+            font-size: 20px
+
+            &:nth-child(3)
+                bottom: 50px
+
+            &--primary
+                color: $brand-color-dark
+            
+            &--secondary
+                color: $brand-color-light
+
+        &__code
+            display: inline-block
+            border: 1px solid $brand-color-dark
+            border-left: 10px solid $brand-color-dark
+            margin: 20px 0 50px
+            padding: 15px
+
+
+// Same button code, with brand specific variables swapped in for Haglofs.
+// This is not needed in practice since we do not mix brand styles on a single page on the storefront.
+// This is just to allow previewing of other brands within a given component.
+[data-brand="hag"]
+    .color-card
+
+        height: 150px
+        position: relative
+
+        &--primary
+            background: $brand-color--primary--hag
+
+            .color-card__text
+                color: #fff
+
+            .color-card__text:nth-child(2)
+                color: $brand-color--secondary--hag
+        
+        &--secondary
+            background: $brand-color--secondary--hag
+
+            .color-card__text
+                color: $brand-color--primary--hag
+
+            .color-card__text:nth-child(2)
+                color: #fff
+
+        &--tertiary
+            background: $brand-color--tertiary--hag
+
+            .color-card__text
+                color: $brand-color--primary--hag
+
+            .color-card__text:nth-child(2)
+                color: $brand-color--secondary--hag
+
+        &__hex
+            color: #fff
+            text-transform: uppercase
+            font-size: 16px
+            position: absolute
+            top: 20px
+            left: 20px
+            text-shadow: 0 0 2px black
+
+        &__text
+            position: absolute
+            bottom: 15px
+            right: 20px
+            color: #fff
+            font-size: 20px
+
+            &:nth-child(3)
+                bottom: 50px
+
+            &--primary
+                color: $brand-color-dark
+            
+            &--secondary
+                color: $brand-color-light
+
+        &__code
+            display: inline-block
+            border: 1px solid $brand-color-dark
+            border-left: 10px solid $brand-color-dark
+            margin: 20px 0 50px
+            padding: 15px

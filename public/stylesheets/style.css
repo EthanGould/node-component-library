@@ -6,6 +6,10 @@
 [data-brand="hag"] .button--tertiary-alt {
   display: none !important; }
 
+[data-brand="ot"] .color-card--tertiary-alt,
+[data-brand="hag"] .color-card--tertiary-alt {
+  display: none !important; }
+
 .homepage__content {
   font-family: sans-serif;
   flex-grow: 1;
@@ -65,6 +69,11 @@
   flex-grow: 1;
   padding: 40px 20px;
   margin: 0 auto 0 300px; }
+  .component__item {
+    margin: 0 0 20px 0; }
+    .component__item--inline {
+      display: inline-block;
+      margin: 0 10px 0 0; }
   .component__sample {
     margin-bottom: 40px; }
   .component__heading {
@@ -86,40 +95,6 @@
       color: #001e63; }
       .component__variant a:hover {
         color: #002d96; }
-  .component__item {
-    margin: 0 0 20px 0; }
-    .component__item--inline {
-      display: inline-block;
-      margin: 0 10px 0 0; }
-  .component__color {
-    height: 150px;
-    position: relative; }
-  .component__hex {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-shadow: 0 0 2px black; }
-  .component__text-sample {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-    color: #fff;
-    font-size: 20px; }
-    .component__text-sample:nth-child(3) {
-      bottom: 50px; }
-    .component__text-sample--primary {
-      color: #001e63; }
-    .component__text-sample--secondary {
-      color: #02c3e6; }
-  .component__code {
-    display: inline-block;
-    border: 1px solid #001e63;
-    border-left: 10px solid #001e63;
-    margin: 20px 0 50px;
-    padding: 15px; }
 
 .button {
   padding: 10px 30px;
@@ -290,6 +265,159 @@
       color: #fff;
       background-color: #e3e5e5;
       border-color: #e3e5e5; }
+
+.color-card {
+  height: 150px;
+  position: relative; }
+  .color-card--primary {
+    background: #001e63; }
+    .color-card--primary .color-card__text {
+      color: #02c3e6; }
+    .color-card--primary .color-card__text:nth-child(2) {
+      color: #fff; }
+  .color-card--secondary {
+    background: #02c3e6; }
+    .color-card--secondary .color-card__text {
+      display: none; }
+    .color-card--secondary .color-card__text:nth-child(2) {
+      display: block;
+      color: #001e63; }
+  .color-card--tertiary {
+    background: #d0df00; }
+    .color-card--tertiary .color-card__text {
+      display: none; }
+    .color-card--tertiary .color-card__text:nth-child(2) {
+      display: block;
+      color: #001e63; }
+  .color-card--tertiary-alt {
+    background: #f8485e; }
+    .color-card--tertiary-alt .color-card__text {
+      color: #fff; }
+    .color-card--tertiary-alt .color-card__text:nth-child(2) {
+      color: #001e63; }
+  .color-card__hex {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-shadow: 0 0 2px black; }
+  .color-card__text {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px; }
+    .color-card__text:nth-child(3) {
+      bottom: 50px; }
+  .color-card__code {
+    display: inline-block;
+    border: 1px solid #001e63;
+    border-left: 10px solid #001e63;
+    margin: 20px 0 50px;
+    padding: 15px; }
+
+[data-brand="ot"] .color-card {
+  height: 150px;
+  position: relative; }
+  [data-brand="ot"] .color-card--primary {
+    background: #7f0019; }
+    [data-brand="ot"] .color-card--primary .color-card__text {
+      display: none; }
+    [data-brand="ot"] .color-card--primary .color-card__text:nth-child(2) {
+      color: #fff;
+      display: block; }
+  [data-brand="ot"] .color-card--secondary {
+    background: #000; }
+    [data-brand="ot"] .color-card--secondary .color-card__text {
+      display: none; }
+    [data-brand="ot"] .color-card--secondary .color-card__text:nth-child(2) {
+      color: #fff;
+      display: block; }
+  [data-brand="ot"] .color-card--tertiary {
+    background: #fff; }
+    [data-brand="ot"] .color-card--tertiary .color-card__text {
+      display: block;
+      color: #000; }
+    [data-brand="ot"] .color-card--tertiary .color-card__text:nth-child(2) {
+      color: #7f0019; }
+  [data-brand="ot"] .color-card--tertiary-alt {
+    background: #000; }
+  [data-brand="ot"] .color-card__hex {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-shadow: 0 0 2px black; }
+  [data-brand="ot"] .color-card__text {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px; }
+    [data-brand="ot"] .color-card__text:nth-child(3) {
+      bottom: 50px; }
+    [data-brand="ot"] .color-card__text--primary {
+      color: #001e63; }
+    [data-brand="ot"] .color-card__text--secondary {
+      color: #02c3e6; }
+  [data-brand="ot"] .color-card__code {
+    display: inline-block;
+    border: 1px solid #001e63;
+    border-left: 10px solid #001e63;
+    margin: 20px 0 50px;
+    padding: 15px; }
+
+[data-brand="hag"] .color-card {
+  height: 150px;
+  position: relative; }
+  [data-brand="hag"] .color-card--primary {
+    background: #041e41; }
+    [data-brand="hag"] .color-card--primary .color-card__text {
+      color: #fff; }
+    [data-brand="hag"] .color-card--primary .color-card__text:nth-child(2) {
+      color: #ff4338; }
+  [data-brand="hag"] .color-card--secondary {
+    background: #ff4338; }
+    [data-brand="hag"] .color-card--secondary .color-card__text {
+      color: #041e41; }
+    [data-brand="hag"] .color-card--secondary .color-card__text:nth-child(2) {
+      color: #fff; }
+  [data-brand="hag"] .color-card--tertiary {
+    background: #e3e5e5; }
+    [data-brand="hag"] .color-card--tertiary .color-card__text {
+      color: #041e41; }
+    [data-brand="hag"] .color-card--tertiary .color-card__text:nth-child(2) {
+      color: #ff4338; }
+  [data-brand="hag"] .color-card__hex {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-shadow: 0 0 2px black; }
+  [data-brand="hag"] .color-card__text {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px; }
+    [data-brand="hag"] .color-card__text:nth-child(3) {
+      bottom: 50px; }
+    [data-brand="hag"] .color-card__text--primary {
+      color: #001e63; }
+    [data-brand="hag"] .color-card__text--secondary {
+      color: #02c3e6; }
+  [data-brand="hag"] .color-card__code {
+    display: inline-block;
+    border: 1px solid #001e63;
+    border-left: 10px solid #001e63;
+    margin: 20px 0 50px;
+    padding: 15px; }
 
 body {
   margin: 0;
