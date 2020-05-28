@@ -63,6 +63,9 @@
       margin: 0;
       padding: 0;
       font-size: initial; }
+  .sidebar__logo {
+    width: 150px;
+    padding: 0 20px 30px; }
 
 .component {
   font-family: sans-serif;
